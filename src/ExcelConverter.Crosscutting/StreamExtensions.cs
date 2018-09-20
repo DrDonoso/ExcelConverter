@@ -2,7 +2,7 @@
 using System.Data;
 using System.IO;
 
-namespace Crosscutting
+namespace ExcelConverter.Crosscutting
 {
     public static class StreamExtensions
     {
