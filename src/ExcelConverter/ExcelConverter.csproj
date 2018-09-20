@@ -10,8 +10,4 @@
     <PackageReference Include="ExcelDataReader.DataSet" Version="3.4.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ExcelConverter.Crosscutting\ExcelConverter.Crosscutting.csproj" />
-  </ItemGroup>
-
 </Project>
