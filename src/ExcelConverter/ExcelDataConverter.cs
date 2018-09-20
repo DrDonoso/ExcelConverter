@@ -30,7 +30,7 @@ namespace ExcelConverter
                 for (var i = 0; i < props.Length; i++)
                 {
                     props[i].SetValue(item,
-                        tableRow.ItemArray[i].GetType() != typeof(DBNull)
+                        !tableRow.ItemArray[i].IsNull()
                             ? Convert.ChangeType(tableRow.ItemArray[i], Nullable.GetUnderlyingType(props[i].PropertyType) ?? props[i].PropertyType, CultureInfo.InvariantCulture)
                             : null);
                 }
